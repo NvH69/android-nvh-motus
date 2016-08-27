@@ -9,8 +9,8 @@ import java.util.List;
 
 public class Dictionaries {
 
-    public static final List<ArrayList<String>> solutionsDictionary = resetDictionary();
-    public static List<ArrayList<String>> fullDictionary = resetDictionary();
+    public static final List<ArrayList<Object>> solutionsDictionary = resetDictionary();
+    public static List<ArrayList<Object>> fullDictionary = resetDictionary();
     private static ResourceLoader resourceLoader = new ResourceLoader();
     public Dictionaries() {
 
@@ -52,8 +52,8 @@ public class Dictionaries {
 
     }
 
-    private static List<ArrayList<String>> resetDictionary() {
-        List<ArrayList<String>> emptyDictionary = new ArrayList<>();
+    private static List<ArrayList<Object>> resetDictionary() {
+        List<ArrayList<Object>> emptyDictionary = new ArrayList<>();
         for (int i = 0; i < 32; i++)
             emptyDictionary.add(new ArrayList<>());
         return emptyDictionary;
